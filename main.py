@@ -29,9 +29,9 @@ st.write('Ci-dessous se trouve un DataFrame:', df, 'Ci-dessus se trouve un DataF
 
 df2 = pd.DataFrame(
      np.random.randn(200, 3),
-     columns=['amp', 'b', 'c'])
+     columns=['a', 'b', 'c'])
 c = alt.Chart(df2).mark_circle().encode(
-     x='amp', y='b', size='c', color='c', tooltip=['amp', 'b', 'c'])
+     x='a', y='b', size='c', color='c', tooltip=['a', 'b', 'c'])
 st.write(c)
 
 chart_data = pd.DataFrame(
